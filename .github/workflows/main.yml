@@ -19,7 +19,7 @@ jobs:
         node-version: '14' # You can specify your desired Node.js version
 
     - name: Install dependencies
-      run: npm ci
+      run: npm install
 
     - name: Run tests
       run: npm test
