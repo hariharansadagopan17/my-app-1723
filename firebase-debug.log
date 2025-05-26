@@ -1,0 +1,247 @@
+[debug] [2025-05-26T18:06:44.931Z] ----------------------------------------------------------------------
+[debug] [2025-05-26T18:06:44.933Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase init
+[debug] [2025-05-26T18:06:44.933Z] CLI Version:   14.4.0
+[debug] [2025-05-26T18:06:44.934Z] Platform:      linux
+[debug] [2025-05-26T18:06:44.934Z] Node Version:  v20.18.1
+[debug] [2025-05-26T18:06:44.934Z] Time:          Mon May 26 2025 18:06:44 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-05-26T18:06:44.934Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-26T18:06:44.938Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-26T18:06:44.939Z] > authorizing via signed-in user (hariharansadagopan17@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/my-app-1723
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-26T18:07:09.189Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:07:09.189Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:07:09.193Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-05-26T18:07:09.739Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-26T18:07:09.739Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project githubdiscordapp-84536 (GithubDiscordApp) 
+[info] 
+=== Hosting Setup
+[debug] [2025-05-26T18:07:11.081Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:07:11.081Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:07:11.081Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/githubdiscordapp-84536 [none]
+[debug] [2025-05-26T18:07:11.318Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/githubdiscordapp-84536 200
+[debug] [2025-05-26T18:07:11.319Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/githubdiscordapp-84536 {"projectId":"githubdiscordapp-84536","projectNumber":"971757775657","displayName":"GithubDiscordApp","name":"projects/githubdiscordapp-84536","resources":{"hostingSite":"githubdiscordapp-84536"},"state":"ACTIVE","etag":"1_9437b1f5-d1ab-4164-830c-9ce59415b44d"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-05-26T18:07:22.238Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-05-26T18:07:22.254Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-05-26T18:07:22.254Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.8.1","browserURL":"https://www.gstatic.com/firebasejs/11.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.8.1/firebase.tgz"},"live":{"version":"11.8","browserURL":"https://www.gstatic.com/firebasejs/live/11.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.8/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/11.8.1/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.8.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.8.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.8.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.memory.js"}}
+[info] i  public/index.html is unchanged 
+[info] 
+[info] i  Detected a .git folder at /home/user/my-app-1723 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=688852803&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-05-26T18:07:55.389Z] ----------------------------------------------------------------------
+[debug] [2025-05-26T18:07:55.391Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase init
+[debug] [2025-05-26T18:07:55.391Z] CLI Version:   14.4.0
+[debug] [2025-05-26T18:07:55.392Z] Platform:      linux
+[debug] [2025-05-26T18:07:55.392Z] Node Version:  v20.18.1
+[debug] [2025-05-26T18:07:55.392Z] Time:          Mon May 26 2025 18:07:55 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-05-26T18:07:55.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-26T18:07:55.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-26T18:07:55.399Z] > authorizing via signed-in user (hariharansadagopan17@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/my-app-1723
+
+[debug] [2025-05-26T18:09:49.301Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/home/user/.global_modules/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1125:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:264:20)
+    at ReadStream.emit (node:events:530:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-05-26T18:10:17.079Z] ----------------------------------------------------------------------
+[debug] [2025-05-26T18:10:17.081Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase init
+[debug] [2025-05-26T18:10:17.081Z] CLI Version:   14.4.0
+[debug] [2025-05-26T18:10:17.082Z] Platform:      linux
+[debug] [2025-05-26T18:10:17.082Z] Node Version:  v20.18.1
+[debug] [2025-05-26T18:10:17.082Z] Time:          Mon May 26 2025 18:10:17 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-05-26T18:10:17.082Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-26T18:10:17.086Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-26T18:10:17.087Z] > authorizing via signed-in user (hariharansadagopan17@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/my-app-1723
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-05-26T18:11:04.668Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:04.668Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:04.670Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-05-26T18:11:04.670Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"EggshellPowderWebsite","name":"EggshellPowderWebsite"}
+[debug] [2025-05-26T18:11:05.529Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-05-26T18:11:05.530Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-05-26T18:11:05.552Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (/home/user/.global_modules/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/home/user/.global_modules/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-05-26T18:11:26.371Z] ----------------------------------------------------------------------
+[debug] [2025-05-26T18:11:26.373Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/user/.global_modules/bin/firebase init
+[debug] [2025-05-26T18:11:26.373Z] CLI Version:   14.4.0
+[debug] [2025-05-26T18:11:26.374Z] Platform:      linux
+[debug] [2025-05-26T18:11:26.374Z] Node Version:  v20.18.1
+[debug] [2025-05-26T18:11:26.374Z] Time:          Mon May 26 2025 18:11:26 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-05-26T18:11:26.374Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-26T18:11:26.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-26T18:11:26.379Z] > authorizing via signed-in user (hariharansadagopan17@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/my-app-1723
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-05-26T18:11:56.524Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:56.525Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:56.529Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-05-26T18:11:56.529Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"eggshellpowder","name":"eggshellpowder"}
+[debug] [2025-05-26T18:11:57.486Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-05-26T18:11:57.486Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.4805262891657440901"}
+[debug] [2025-05-26T18:11:57.487Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:57.487Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:57.488Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4805262891657440901 [none]
+[debug] [2025-05-26T18:11:58.273Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4805262891657440901 200
+[debug] [2025-05-26T18:11:58.274Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4805262891657440901 {"name":"operations/create_project.global.4805262891657440901"}
+[debug] [2025-05-26T18:11:58.774Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-05-26T18:11:58.775Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:58.775Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:58.775Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4805262891657440901 [none]
+[debug] [2025-05-26T18:11:58.976Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4805262891657440901 200
+[debug] [2025-05-26T18:11:58.976Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.4805262891657440901 {"name":"operations/create_project.global.4805262891657440901","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"181809595141","projectId":"eggshellpowder","lifecycleState":"ACTIVE","name":"eggshellpowder","createTime":"2025-05-26T18:11:58.245455Z"}}
+[debug] [2025-05-26T18:11:58.978Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:58.978Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:11:58.978Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/eggshellpowder:addFirebase [none]
+[debug] [2025-05-26T18:12:02.211Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/eggshellpowder:addFirebase 200
+[debug] [2025-05-26T18:12:02.211Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/eggshellpowder:addFirebase {"name":"operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk"}
+[debug] [2025-05-26T18:12:02.211Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:02.211Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:02.212Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk [none]
+[debug] [2025-05-26T18:12:05.016Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk 200
+[debug] [2025-05-26T18:12:05.017Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk {"name":"operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk"}
+[debug] [2025-05-26T18:12:05.518Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-05-26T18:12:05.519Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:05.519Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:05.520Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk [none]
+[debug] [2025-05-26T18:12:06.177Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk 200
+[debug] [2025-05-26T18:12:06.180Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk {"name":"operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk"}
+[debug] [2025-05-26T18:12:07.181Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-05-26T18:12:07.182Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:07.182Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:07.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk [none]
+[debug] [2025-05-26T18:12:08.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk 200
+[debug] [2025-05-26T18:12:08.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk {"name":"operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk"}
+[debug] [2025-05-26T18:12:10.081Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-05-26T18:12:10.081Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:10.082Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:10.082Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk [none]
+[debug] [2025-05-26T18:12:11.054Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk 200
+[debug] [2025-05-26T18:12:11.054Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk {"name":"operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk"}
+[debug] [2025-05-26T18:12:15.055Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-05-26T18:12:15.056Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:15.056Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:15.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk [none]
+[debug] [2025-05-26T18:12:15.968Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk 200
+[debug] [2025-05-26T18:12:15.969Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk {"name":"operations/workflows/MGFhN2YyMzctMjkxNy00MWY1LTg4MjUtYjRjMzFkYzA2ZDRk","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"eggshellpowder","projectNumber":"181809595141","displayName":"eggshellpowder","name":"projects/eggshellpowder","resources":{"hostingSite":"eggshellpowder"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: eggshellpowder
+[info]    - Project Name: eggshellpowder
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/eggshellpowder/overview
+[info] i  Using project eggshellpowder (eggshellpowder) 
+[info] 
+=== Hosting Setup
+[debug] [2025-05-26T18:12:16.002Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:16.003Z] Checked if tokens are valid: true, expires at: 1748285933517
+[debug] [2025-05-26T18:12:16.008Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eggshellpowder [none]
+[debug] [2025-05-26T18:12:16.994Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eggshellpowder 200
+[debug] [2025-05-26T18:12:16.994Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eggshellpowder {"projectId":"eggshellpowder","projectNumber":"181809595141","displayName":"eggshellpowder","name":"projects/eggshellpowder","resources":{"hostingSite":"eggshellpowder"},"state":"ACTIVE","etag":"1_d3630bec-277f-4118-a312-0246d9649f60"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-05-26T18:12:24.481Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-05-26T18:12:24.494Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-05-26T18:12:24.495Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.8.1","browserURL":"https://www.gstatic.com/firebasejs/11.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.8.1/firebase.tgz"},"live":{"version":"11.8","browserURL":"https://www.gstatic.com/firebasejs/live/11.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.8/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/11.8.1/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.8.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.8.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.8.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.memory.js"}}
+[info] i  public/index.html is unchanged 
+[info] 
+[info] i  Detected a .git folder at /home/user/my-app-1723 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1002118423&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
