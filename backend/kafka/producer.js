@@ -2,7 +2,7 @@ import { Kafka } from 'kafkajs';
 
 const kafka = new Kafka({
   clientId: 'my-app-producer',
-  brokers: ['127.0.0.1:9092', '127.0.0.1:2181'] // REPLACE with your Kafka broker addresses
+  brokers: ['127.0.0.1:9092'] // REPLACE with your Kafka broker addresses
 });
 
 const producer = kafka.producer();
