@@ -27,7 +27,7 @@ export const runConsumer = async () => {
 
   } catch (error) {
     console.error('Error in Kafka consumer:', error);
-    // Consider more sophisticated error handling and reconnection strategies
+    // Consider more sophisticated error handling and reconnection strategies if this is a critical consumer
   }
 };
 
