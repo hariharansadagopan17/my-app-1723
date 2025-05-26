@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import Checkout from './components/Checkout';
-
 const App = () => {
   return (
     <BrowserRouter>

@@ -40,10 +40,6 @@ const ProductList = () => {
     return <div>Error loading products: {error.message}</div>;
   }
 
-  if (error) {
-    return <div>Error loading products: {error.message}</div>;
-  }
-
   return (
     <div>
       <h2>Eggshell Powder Products</h2>
@@ -51,7 +47,7 @@ const ProductList = () => {
       {products.length === 0 ? (
         <p>No products found matching your criteria.</p>
       ) : (
-        <ul>
+        <ul> {/* Added ul tag to wrap the list items */}
           {products.map(product => (
             <li key={product._id}>
               {product.name} - ₹{product.price.toFixed(2)}
@@ -59,8 +55,7 @@ const ProductList = () => {
             </li>
           ))}
         </ul>
-      )}
-    </div>
+      )}    </div>
   );
 };
 
